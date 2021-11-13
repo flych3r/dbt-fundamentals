@@ -18,8 +18,7 @@ customer_orders as (
     from orders
     group by 1
 
-),
-
+)
 
 select
     customers.customer_id,
