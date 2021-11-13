@@ -5,4 +5,4 @@ select
     status,
     amount / 100 as amount,
     created as creation_date
-from dbt_fundamentals.stripe.payment
+from {{ source('stripe', 'payment') }}
